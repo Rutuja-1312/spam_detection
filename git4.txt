@@ -1,0 +1,52 @@
+GIT PRACTICAL (GITIGNORE IMPLEMENTATION)
+
+Title: Ignoring Files and Directories using .gitignore
+
+1.  Initialize Repository cd Desktop mkdir ds-project-ignore cd
+    ds-project-ignore git init
+
+2.  Connect to GitHub git remote add origin
+    https://github.com/Rutuja-1312/ds-project-ignore.git
+
+3.  Create Branch git checkout -b GIT-EXAM-1
+
+4.  Create program2.py (Palindrome) string = input(“Enter a string:”) if
+    string == string[::-1]: print(“Palindrome”) else: print(“Not
+    Palindrome”)
+
+5.  Create program1.py (Squares) for i in range(1, 11): print(i, “square
+    =”, i*i)
+
+6.  Commit and Push git add . git commit -m “Added program1 and
+    program2” git push -u origin GIT-EXAM-1
+
+7.  Create IGNORE Directory mkdir IGNORE cd IGNORE touch test1.txt
+    test2.txt cd ..
+
+8.  Create .gitignore File touch .gitignore
+
+Add the following line: IGNORE/
+
+9.  Commit and Push git add . git commit -m “Added .gitignore to ignore
+    IGNORE folder” git push
+
+10. Verification Open GitHub repository and verify that:
+
+-   program1.py is visible
+-   program2.py is visible
+-   IGNORE folder is not visible
+
+Explanation:
+
+This experiment demonstrates how to ignore files or directories using
+the .gitignore file. After creating a repository and adding program
+files, a directory named IGNORE is created. By adding IGNORE/ in the
+.gitignore file, Git is instructed to ignore that directory. After
+committing and pushing, the IGNORE folder does not appear on GitHub,
+proving that it is successfully ignored.
+
+Conclusion:
+
+The .gitignore file is used to exclude specific files or folders from
+version control. This helps in preventing unnecessary or sensitive files
+from being uploaded to the remote repository.

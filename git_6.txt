@@ -1,0 +1,78 @@
+Title:
+GitHub Collaboration using Fork and Pull Request
+
+Aim:
+To demonstrate cloning, forking, branching, and pull request workflow.
+
+Steps:
+a. Clone Repository
+git clone https://github.com/KalyanM45/AI-Project-Gallery.gitcd AI-Project-Gallery
+
+b. Demonstrate Restriction
+git checkout -b test-branchgit push origin test-branch
+Result: Permission denied (403 error)
+
+c. Fork Repository
+
+
+Open GitHub
+
+
+Search: KalyanM45/AI-Project-Gallery
+
+
+Click Fork
+
+
+Create copy in your account
+
+
+
+d. Clone Fork
+git clone https://github.com/Rutuja-1312/AI-Project-Gallery.gitcd AI-Project-Gallery
+
+e. Create Branch
+git checkout -b GIT-EXAM
+
+f. Add Code
+touch new_feature.py
+print("Feature added by user")
+
+g. Commit & Push
+git add .git commit -m "Added new feature"git push origin GIT-EXAM
+
+f. Pull Request
+
+
+Click Compare & pull request
+
+
+Observation:
+Pull request was disabled by repository owner.
+
+g. Merge Conflict (Theory)
+git pull origin main# resolve conflicts manuallygit add .git commit -m "Resolved conflict"git push
+
+Explanation:
+This experiment demonstrates GitHub collaboration.
+Direct push failed due to permission issues.
+Forking allowed independent development.
+Branch was created and changes were pushed.
+Pull request could not be created as it was disabled by the repository owner.
+
+Conclusion:
+Forking allows working on external repositories.
+Pull requests help in collaboration but depend on permissions.
+
+Exam Points:
+
+
+PR = Pull Request
+
+
+Fork = Copy of repository
+
+
+403 error = No permission
+
+

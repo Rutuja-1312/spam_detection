@@ -1,0 +1,31 @@
+GIT PRACTICAL FILE
+
+1.  Initialize Repository cd Desktop mkdir data-science-project cd
+    data-science-project git init
+
+2.  Connect to GitHub git remote add origin
+    https://github.com/Rutuja-1312/data-science-project.git
+
+3.  Create program1.py touch program1.py
+
+Code: num = int(input(“Enter a number:”)) print(“Multiplication Table
+of”, num) for i in range(1, 11): print(num, “x”, i, “=”, num * i)
+
+4.  Commit and Push git add . git commit -m “Added program1.py” git
+    branch -M main git push -u origin main
+
+5.  Create Branch git checkout -b GIT-EXAM
+
+6.  Create program2.py touch program2.py
+
+Code: a = int(input(“Enter first number:”)) b = int(input(“Enter second
+number:”)) if a > b: print(“Greatest number is:”, a) else:
+print(“Greatest number is:”, b)
+
+7.  Commit and Push git add . git commit -m “Added program2.py” git push
+    origin GIT-EXAM
+
+8.  Show Difference git diff main GIT-EXAM
+
+Conclusion: Main branch contains program1.py. GIT-EXAM branch contains
+program2.py.

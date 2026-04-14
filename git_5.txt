@@ -1,0 +1,72 @@
+GIT PRACTICAL USING GITHUB DESKTOP (.GITIGNORE)
+
+Title: Version Control using GitHub Desktop with .gitignore
+
+Steps:
+
+1.  Create Repository
+
+-   Open GitHub Desktop
+-   File → New Repository
+-   Name: ds-project-ignore-desktop
+-   Choose Local Path (Desktop)
+-   Click Create Repository
+
+2.  Publish Repository
+
+-   Click Publish Repository
+-   Select Public/Private
+-   Click Publish
+
+3.  Create Branch
+
+-   Click Current Branch → New Branch
+-   Name: GIT-EXAM-1
+
+4.  Create program2.py (Palindrome) string = input(“Enter a string:”) if
+    string == string[::-1]: print(“Palindrome”) else: print(“Not
+    Palindrome”)
+
+5.  Create program1.py (Squares) for i in range(1, 11): print(i, “square
+    =”, i*i)
+
+6.  Commit and Push
+
+-   Commit message: Added program1 and program2
+-   Click Commit to GIT-EXAM-1
+-   Click Push Origin
+
+7.  Create IGNORE Folder
+
+-   Create folder IGNORE
+-   Add test1.txt and test2.txt
+
+8.  Create .gitignore File
+
+-   Create .gitignore in root folder
+-   Add: IGNORE/
+
+9.  Commit and Push
+
+-   Commit message: Added .gitignore to ignore IGNORE folder
+-   Click Commit and Push
+
+10. Verification
+
+-   Open GitHub
+-   Switch to GIT-EXAM-1 branch
+-   Check: program1.py → visible program2.py → visible IGNORE folder →
+    not visible
+
+Explanation:
+
+This experiment demonstrates version control using GitHub Desktop. A
+repository is created and published. A branch is created and Python
+programs are added. A folder named IGNORE is created but excluded using
+.gitignore. After pushing, ignored files do not appear on GitHub.
+
+Conclusion:
+
+GitHub Desktop provides an easy interface for Git operations. The
+.gitignore file helps in excluding unnecessary files from version
+control.

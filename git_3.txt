@@ -1,0 +1,57 @@
+GIT PRACTICAL EXPERIMENT (ADVANCED)
+
+Title: Git Branching, Pull, Conflict and Merge using Git Bash
+
+1.  Initialize Repository cd Desktop mkdir ds-project-3 cd ds-project-3
+    git init
+
+2.  Connect to GitHub git remote add origin
+    https://github.com/Rutuja-1312/ds-project-3.git
+
+3.  Create Branch GIT-EXAM-1 git checkout -b GIT-EXAM-1
+
+Create program2.py (Palindrome): string = input(“Enter a string:”) if
+string == string[::-1]: print(“Palindrome”) else: print(“Not
+Palindrome”)
+
+Create program1.py (Squares): for i in range(1, 11): print(i, “square
+=”, i*i)
+
+4.  Commit and Push git add . git commit -m “Added program1 and program2
+    in GIT-EXAM-1” git push -u origin GIT-EXAM-1
+
+5.  Create Branch GIT-EXAM-2 git checkout -b GIT-EXAM-2
+
+6.  Pull changes from GIT-EXAM-1 git pull origin GIT-EXAM-1
+
+7.  Modify program1.py (Conflict) for i in range(1, 11): print(“Square
+    of”, i, “is”, i*i)
+
+8.  Commit and Push git add . git commit -m “Modified program1 in
+    GIT-EXAM-2” git push -u origin GIT-EXAM-2
+
+9.  Show Difference git diff GIT-EXAM-1 GIT-EXAM-2
+
+10. Pull Request Create pull request from GIT-EXAM-2 to GIT-EXAM-1 and
+    merge.
+
+Explanation:
+
+This experiment demonstrates advanced Git operations such as branching,
+pulling changes, creating conflicts, and merging. Initially, a
+repository is created and connected to GitHub. In the GIT-EXAM-1 branch,
+two programs are created: one for palindrome checking and another for
+printing squares. The changes are committed and pushed.
+
+A new branch GIT-EXAM-2 is created and changes are pulled from
+GIT-EXAM-1. The program1.py file is modified to simulate a conflict.
+Changes are committed and pushed. The differences between branches are
+demonstrated using git diff.
+
+Finally, a pull request is created to merge GIT-EXAM-2 into GIT-EXAM-1,
+completing the version control workflow.
+
+Conclusion:
+
+Git enables efficient version control, branching, and conflict
+management, while GitHub facilitates collaboration and code integration.

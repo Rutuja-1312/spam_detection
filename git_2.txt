@@ -1,0 +1,47 @@
+GIT PRACTICAL EXPERIMENT
+
+Title: GitHub Version Control using Git Bash
+
+Commands:
+
+1.  Initialize Repository cd Desktop mkdir data-science-project-2 cd
+    data-science-project-2 git init
+
+2.  Connect to GitHub git remote add origin
+    https://github.com/Rutuja-1312/data-science-project-2.git
+
+3.  Create program1.py touch program1.py
+
+Program1 Code (Even/Odd): num = int(input(“Enter a number:”)) if num % 2
+== 0: print(“Even Number”) else: print(“Odd Number”)
+
+4.  Commit and Push git add . git commit -m “Added program1.py” git
+    branch -M main git push -u origin main
+
+5.  Create Branch git checkout -b GIT-EXAM
+
+6.  Create program2.py touch program2.py
+
+Program2 Code (Reverse String): string = input(“Enter a string:”)
+reverse = string[::-1] print(“Reversed string is:”, reverse)
+
+7.  Commit and Push git add . git commit -m “Added program2.py” git push
+    origin GIT-EXAM
+
+8.  Show Difference git diff main GIT-EXAM
+
+9.  Pull Request Create pull request on GitHub and merge branches.
+
+Explanation:
+
+This experiment demonstrates how to use Git and GitHub for version
+control. A repository is initialized and connected to GitHub. A Python
+program is created and pushed to the main branch. A new branch is
+created to add another program. The differences between branches are
+checked using git diff. Finally, a pull request is created to merge
+changes into the main branch.
+
+Conclusion:
+
+Git and GitHub help in managing code versions, tracking changes, and
+collaborating efficiently.
