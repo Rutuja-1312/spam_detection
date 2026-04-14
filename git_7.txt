@@ -1,0 +1,64 @@
+GitHub Practical – Fork, Branch, PR & Conflict Handling
+
+Aim:
+To perform Git operations including cloning a repository, forking, creating branches, making changes, and submitting a pull request using GitHub Desktop.
+
+Repository Used:
+https://github.com/KalyanM45/Spam-Email-Detection.git
+
+Steps & Implementation:
+
+a. Clone Repository
+- Open GitHub Desktop
+- Click File → Clone Repository
+- Select URL and paste repository link
+- Choose local path and click Clone
+
+b. Demonstrate Branch Creation Disallowed
+- Attempt to push changes directly to original repository
+- Error observed: Permission denied (403)
+- This shows direct modification is not allowed
+
+c. Fork Repository
+- Open repository in browser
+- Click Fork
+- Fork created in your account
+
+d. Create Feature Branch
+- Click Current Branch → New Branch
+- Name: GIT-EXAM
+
+e. Add Code
+Create file: test.py
+
+Code:
+print("Git Exam Feature Added")
+
+f. Commit & Push
+- Commit to GIT-EXAM
+- Click Publish Branch
+
+g. Create Pull Request
+- Click Preview Pull Request
+- Click Create Pull Request
+
+h. Conflict Resolution
+- Resolve in VS Code or GitHub if occurs
+- In this practical: No conflicts occurred
+
+Output:
+- Fork created
+- Branch created
+- PR submitted successfully
+
+Conclusion:
+GitHub workflow of fork, branch, commit and PR is successfully implemented.
+
+Viva:
+1. Fork: Copy of repo
+2. PR: Merge request
+3. Branch: Separate working area
+4. Conflict: Same code edited
+5. Resolve: VS Code / GitHub
+
+End of Practical
